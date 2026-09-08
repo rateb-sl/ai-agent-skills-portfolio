@@ -5,11 +5,11 @@ version: 1.0.0
 license: MIT
 ---
 
-# Secure AI-Agent Workflows
+# Secure AI-Agent Workflows for Hermes and Other Agent Tools
 
 ## Purpose
 
-Design AI-agent workflows that are useful, inspectable, reusable, and resistant to credential and privacy mistakes. This covers skill authoring, delegated work, tool integrations, MCP-style servers, and verification.
+Design AI-agent workflows that are useful, inspectable, reusable, and resistant to credential and privacy mistakes. The method is tool-agnostic, but the skill format and examples are especially suitable for Hermes and other skill-based agent tools. This covers skill authoring, delegated work, tool integrations, MCP-style servers, and verification.
 
 ## Design principles
 

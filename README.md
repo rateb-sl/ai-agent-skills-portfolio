@@ -2,16 +2,72 @@
 
 Reusable, public-safe workflows for cloud-engineering learning, guided labs, technical knowledge capture, documentation, software delivery, and secure AI-agent operations.
 
-## Portfolio
+This portfolio is organized around capabilities rather than isolated recipes. Each umbrella skill combines related methods so users get one coherent workflow instead of a collection of overlapping instructions.
 
-| Skill | What it helps with |
-|---|---|
-| [Cloud Engineering Learning Mentor](cloud-engineering-learning-mentor/) | Learn cloud concepts through mental models, decisions, and proof |
-| [Guided Cloud Lab Execution](guided-cloud-lab-execution/) | Run AWS, Terraform, and Linux labs with evidence and cleanup |
-| [Technical Study Note Production](technical-study-note-production/) | Turn lessons and experiments into durable technical notes |
-| [Technical Documentation and Visuals](technical-documentation-and-visuals/) | Explain systems clearly with precise writing and diagrams |
-| [Verified Software and Portfolio Delivery](verified-software-and-portfolio-delivery/) | Move work from plan to tested, documented public artifact |
-| [Secure AI-Agent Workflows](secure-ai-agent-workflows/) | Design reusable agent workflows without exposing credentials |
+## Portfolio overview
+
+| Skill | Main benefit | Best for |
+|---|---|---|
+| [Cloud Engineering Learning Mentor](cloud-engineering-learning-mentor/) | Turns passive study into explainable understanding and practical proof | Cloud learners and mentors |
+| [Guided Cloud Lab Execution](guided-cloud-lab-execution/) | Makes infrastructure practice safer, more deliberate, and verifiable | AWS, Terraform, and Linux learners |
+| [Technical Study Note Production](technical-study-note-production/) | Converts lessons and experiments into durable knowledge | Students, engineers, and educators |
+| [Technical Documentation and Visuals](technical-documentation-and-visuals/) | Makes systems easier to understand, review, and operate | Technical writers and engineers |
+| [Verified Software and Portfolio Delivery](verified-software-and-portfolio-delivery/) | Turns work into credible, tested, public evidence | Developers and job seekers |
+| [Secure AI-Agent Workflows for Hermes and Other Agent Tools](secure-ai-agent-workflows/) | Adds structure, security, and verification to agent-assisted work | AI users, developers, and platform teams |
+
+## Why these skills belong together
+
+The portfolio describes a complete technical growth loop:
+
+```text
+Learn a concept
+    ↓
+Practice it in a controlled lab
+    ↓
+Explain and document what happened
+    ↓
+Verify the artifact and publish it safely
+    ↓
+Use automation without exposing sensitive information
+```
+
+## Detailed benefits
+
+### Cloud Engineering Learning Mentor
+
+This skill helps a learner understand where a topic fits, build the right mental model, and connect theory to a small proof. Its main benefit is reducing passive course consumption: the learner must explain, test, and apply the concept. It is useful for AWS, Linux, networking, Python automation, Terraform, troubleshooting, and entry-level cloud interview preparation.
+
+### Guided Cloud Lab Execution
+
+This skill turns a lab into an evidence-driven engineering exercise. It makes prerequisites, side effects, verification, cost, and cleanup visible before anything is changed. The benefit is learning how to operate infrastructure responsibly rather than merely copying commands that happen to work once.
+
+### Technical Study Note Production
+
+This skill creates notes that remain useful after the lesson ends. It separates source material from original synthesis, records evidence boundaries, and organizes concepts, implementation details, failures, and recall questions. The benefit is a searchable technical knowledge base that supports future work instead of a transcript archive.
+
+### Technical Documentation and Visuals
+
+This skill helps explain a system to someone who was not present during its creation. It combines precise writing with diagrams that show components, trust boundaries, dependencies, and flows. The benefit is better handoffs, design reviews, troubleshooting, onboarding, and technical communication.
+
+### Verified Software and Portfolio Delivery
+
+This skill provides a path from idea to public proof: define the artifact, inspect the repository, implement narrowly, test, scan, document, and verify the remote result. The benefit is a portfolio that demonstrates real engineering judgment instead of a collection of unverified code samples.
+
+### Secure AI-Agent Workflows
+
+This skill treats security and verification as part of agent design. It covers reusable skill architecture, tool boundaries, untrusted outputs, least-privilege credentials, public-safe exports, and leak response. The benefit is using AI automation productively without treating convenience as permission to expose secrets or make unreviewed changes.
+
+## Tool compatibility
+
+The cloud, lab, study, documentation, and delivery workflows are tool-agnostic: they can be adapted to normal engineering work, ChatGPT, Claude, Gemini, local agents, Hermes, or no AI tool at all. The secure agent-workflow skill uses a generic method but is written with Hermes-style skills and other skill-based agent tools in mind.
+
+## How to use the portfolio
+
+1. Start with the umbrella closest to your goal.
+2. Read its purpose, scope, workflow, and completion test.
+3. Adapt examples to your environment with placeholders replaced locally.
+4. Add provider-specific references only when the general method is clear.
+5. Verify results and record limitations instead of claiming more than the evidence supports.
 
 ## Design principles
 
