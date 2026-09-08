@@ -1,5 +1,9 @@
 # Guided Cloud Lab Execution
 
+## Compatibility
+
+This workflow is not tied to one AI platform. It can guide work performed manually, with Hermes, Claude, GPT-based agents, or another assistant. It is designed for AWS, Terraform, Linux, shell-based labs, and similar infrastructure environments.
+
 ## What this skill does
 
 This skill guides AWS, Terraform, Linux, and similar infrastructure labs one meaningful step at a time. It combines active learning with safe execution, state read-back, troubleshooting, and cleanup.
