@@ -1,6 +1,6 @@
-# Public Skills Portfolio
+# AI-Agent Skills Portfolio
 
-Reusable, public-safe workflows for cloud-engineering learning, guided labs, technical knowledge capture, documentation, software delivery, and secure AI-agent operations.
+Reusable, public-safe Markdown skills and workflows for Hermes, Claude, GPT-based agents, and other compatible AI-agent tools. The methods are tool-agnostic unless a section explicitly identifies a platform-specific integration.
 
 This portfolio is organized around capabilities rather than isolated recipes. Each umbrella skill combines related methods so users get one coherent workflow instead of a collection of overlapping instructions.
 
