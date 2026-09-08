@@ -2,7 +2,7 @@
 
 ## Compatibility
 
-The security and workflow principles are tool-agnostic. The `SKILL.md` structure is especially suitable for Hermes and other AI tools that support reusable skills, prompts, tools, or agent workflows. It is not limited to Hermes.
+The security principles are tool-agnostic and apply to Hermes, Claude, GPT-based agents, Gemini, local agents, MCP-enabled tools, and other systems that use prompts, tools, or reusable workflows. The included `SKILL.md` format is especially suitable for Hermes and other skill-based agent systems, but it is not limited to Hermes.
 
 ## What this skill does
 
