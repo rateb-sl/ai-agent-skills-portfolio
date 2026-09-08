@@ -14,6 +14,7 @@ This portfolio is organized around capabilities rather than isolated recipes. Ea
 | [Technical Documentation and Visuals](technical-documentation-and-visuals/) | Makes systems easier to understand, review, and operate | Technical writers and engineers |
 | [Verified Software and Portfolio Delivery](verified-software-and-portfolio-delivery/) | Turns work into credible, tested, public evidence | Developers and job seekers |
 | [Secure AI-Agent Workflows for Hermes and Other Agent Tools](secure-ai-agent-workflows/) | Adds structure, security, and verification to agent-assisted work | AI users, developers, and platform teams |
+| [Bounded Job Search and Candidate Triage](bounded-job-search-and-candidate-triage/) | Turns job-board browsing into a focused, evidence-based shortlist | Job seekers, mentors, and career tools |
 
 ## Why these skills belong together
 
@@ -56,6 +57,10 @@ This skill provides a path from idea to public proof: define the artifact, inspe
 ### Secure AI-Agent Workflows
 
 This skill treats security and verification as part of agent design. It covers reusable skill architecture, tool boundaries, untrusted outputs, least-privilege credentials, public-safe exports, and leak response. The benefit is using AI automation productively without treating convenience as permission to expose secrets or make unreviewed changes.
+
+### Bounded Job Search and Candidate Triage
+
+This skill turns multi-board job searching into a finite research workflow. It deduplicates listings, applies explicit feasibility gates, separates strong matches from stretch roles, and records the evidence behind each recommendation. The benefit is a shortlist that is more honest and actionable, while keeping applications, credentials, documents, and outreach under the candidate's control.
 
 ## Tool compatibility
 
