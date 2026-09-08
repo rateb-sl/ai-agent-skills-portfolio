@@ -1,5 +1,9 @@
 # Technical Documentation and Visuals
 
+## Compatibility
+
+The method works with Markdown, Mermaid-compatible diagram tools, SVG, presentation tools, and standard documentation platforms. It is independent of Hermes, Claude, GPT, or any particular AI provider.
+
 ## What this skill does
 
 This skill makes complex systems understandable through precise writing, useful diagrams, and evidence-linked explanations.
