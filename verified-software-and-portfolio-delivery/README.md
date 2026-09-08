@@ -1,5 +1,9 @@
 # Verified Software and Portfolio Delivery
 
+## Compatibility
+
+This workflow fits Git, GitHub, GitLab, CI systems, and local repositories. AI assistance is optional: it can be used with Hermes, Claude, GPT-based agents, other coding tools, or a human-only review process.
+
 ## What this skill does
 
 This skill moves technical work from a bounded idea to a tested, documented, reviewable, and appropriately published artifact.
