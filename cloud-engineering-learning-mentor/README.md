@@ -1,5 +1,9 @@
 # Cloud Engineering Learning Mentor
 
+## Compatibility
+
+This workflow is tool-agnostic. It can support learning with Hermes, Claude, GPT-based agents, Gemini, local tools, or no AI tool. It is useful for AWS, Azure, GCP, Linux, networking, Python, Terraform, and general cloud-engineering study.
+
 ## What this skill does
 
 This skill guides a learner from cloud fundamentals to practical, explainable engineering work. It connects AWS, Linux, networking, Python automation, infrastructure as code, troubleshooting, certification preparation, and junior-role readiness into one learning path.
