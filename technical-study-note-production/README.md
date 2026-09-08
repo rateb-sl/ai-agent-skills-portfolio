@@ -1,5 +1,9 @@
 # Technical Study Note Production
 
+## Compatibility
+
+The output is plain Markdown and can be used in GitHub, Obsidian, Notion, a documentation site, or a normal file system. The workflow can be performed with Hermes, Claude, GPT-based agents, another assistant, or manually.
+
 ## What this skill does
 
 This skill turns a course lesson, lab, experiment, transcript, or documentation set into a self-contained technical note that remains useful later.
