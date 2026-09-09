@@ -11,6 +11,7 @@ This portfolio is organized around capabilities rather than isolated recipes. Ea
 | [Cloud Engineering Learning Mentor](cloud-engineering-learning-mentor/) | Turns passive study into explainable understanding and practical proof | Cloud learners and mentors |
 | [Guided Cloud Lab Execution](guided-cloud-lab-execution/) | Makes infrastructure practice safer, more deliberate, and verifiable | AWS, Terraform, and Linux learners |
 | [Technical Study Note Production](technical-study-note-production/) | Converts lessons and experiments into durable knowledge | Students, engineers, and educators |
+| [Second-Brain Knowledge Organization](second-brain-knowledge-organization/) | Organizes sources, understanding, projects, and outputs into a retrievable system | Obsidian users, knowledge workers, and AI-agent users |
 | [Technical Documentation and Visuals](technical-documentation-and-visuals/) | Makes systems easier to understand, review, and operate | Technical writers and engineers |
 | [Verified Software and Portfolio Delivery](verified-software-and-portfolio-delivery/) | Turns work into credible, tested, public evidence | Developers and job seekers |
 | [Secure AI-Agent Workflows for Hermes and Other Agent Tools](secure-ai-agent-workflows/) | Adds structure, security, and verification to agent-assisted work | AI users, developers, and platform teams |
@@ -45,6 +46,10 @@ This skill turns a lab into an evidence-driven engineering exercise. It makes pr
 ### Technical Study Note Production
 
 This skill creates notes that remain useful after the lesson ends. It separates source material from original synthesis, records evidence boundaries, and organizes concepts, implementation details, failures, and recall questions. The benefit is a searchable technical knowledge base that supports future work instead of a transcript archive.
+
+### Second-Brain Knowledge Organization
+
+This skill helps a person design and maintain a second brain that moves from source material to evidence, durable understanding, questions, projects, and useful outputs. It covers lifecycle-based organization, note types, naming, safe restructuring, and the boundary between reusable agent instructions, private memory, and personal vault data.
 
 ### Technical Documentation and Visuals
 
