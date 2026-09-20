@@ -1,7 +1,7 @@
 ---
 name: technical-documentation-and-visuals
 description: Use when explaining systems clearly with text or diagrams.
-version: 1.0.0
+version: 1.1.0
 license: MIT
 ---
 
@@ -42,6 +42,12 @@ Do not decorate a diagram at the expense of meaning. Every visual element should
 - Distinguish observed evidence from assumptions.
 - Avoid invented metrics, output, or production claims.
 - Use generic names and placeholders in public examples.
+
+## Privacy and evidence gate
+
+- Inspect screenshots, diagrams, alt text, filenames, document metadata, URLs, and embedded links for personal data, credentials, account identifiers, private hostnames, and internal paths.
+- Treat generated diagrams and copied configuration as unverified until they match the source design or observed state.
+- Do not publish a diagram merely because it looks complete: mark unknown, simulated, and learner-reported paths explicitly.
 
 ## Completion test
 

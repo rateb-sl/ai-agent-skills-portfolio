@@ -1,7 +1,7 @@
 ---
 name: technical-study-note-production
 description: Use when turning technical work into durable notes.
-version: 1.0.0
+version: 1.1.0
 license: MIT
 ---
 
@@ -49,6 +49,12 @@ Before publishing, remove:
 - unverified claims and invented output.
 
 Replace environment-specific values with clear placeholders and state what must be substituted.
+
+## AI and provenance gate
+
+- Treat AI-generated summaries, citations, quotations, commands, and test results as unverified until checked against the source or live evidence.
+- Preserve the distinction between what the source says, what was observed, and what the author inferred. Never invent a citation, quote, output, or completion state.
+- Do not upload private course portals, paid materials, personal notes, or confidential work content to a model unless the owner and terms explicitly allow it.
 
 ## Completion test
 

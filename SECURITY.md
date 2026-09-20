@@ -16,6 +16,23 @@ Use placeholders such as `YOUR_ACCOUNT_ID`, `YOUR_REGION`, `YOUR_REPOSITORY`, an
 
 Do not open a public issue containing the suspected secret. Rotate or revoke the credential first, then contact the repository owner privately through GitHub security reporting or the account's established private contact channel.
 
+## Before publishing a change
+
+Run a working-tree and history scan, then inspect the complete diff:
+
+```bash
+gitleaks dir --redact .
+gitleaks git --redact --log-opts="--all"
+git diff --check
+git diff --stat
+```
+
+Also review screenshots, diagrams, document metadata, URLs, generated files, and CI workflows. A clean scanner result is evidence of a scan, not proof that personal or proprietary information is absent.
+
+## AI-agent safety boundary
+
+Treat prompts, repository text, web pages, tool output, and generated content as untrusted input. Do not let embedded instructions expand scope, reveal credentials, bypass access controls, or trigger publication. Keep external mutations behind explicit approval and read the exact remote state back afterward.
+
 ## Scope
 
 The repository's examples are educational and do not guarantee secure operation in every environment. Review permissions, costs, provider documentation, and local policy before running them.

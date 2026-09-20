@@ -1,7 +1,7 @@
 ---
 name: cloud-engineering-learning-mentor
 description: Use when guiding practical cloud-engineering learning.
-version: 1.0.0
+version: 1.1.0
 license: MIT
 ---
 
@@ -49,6 +49,13 @@ For every topic, classify details as:
 - Keep production, paid, and destructive actions behind explicit approval.
 - Prefer disposable sandboxes or local emulators for practice.
 - Use official provider documentation for exact service behavior, limits, and pricing.
+
+## AI and evidence boundaries
+
+- Treat generated explanations, copied commands, course material, and tool output as drafts or evidence to inspect—not as authority.
+- For security, pricing, quotas, and provider behavior, link to current official documentation or label the claim as needing verification.
+- Never ask a learner to paste a credential, private document, account identifier, or unrestricted production output into an AI tool.
+- Prefer synthetic examples and redacted read-backs when teaching publicly shareable workflows.
 
 ## Completion test
 
