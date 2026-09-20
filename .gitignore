@@ -10,7 +10,8 @@
 *.tfstate
 *.tfstate.*
 .terraform/
-.terraform.lock.hcl
+*.tfvars
+*.tfvars.json
 *.log
 .DS_Store
 .vscode/
@@ -20,8 +21,17 @@ __pycache__/
 *.sqlite
 *.sqlite3
 *.db
+credentials
+credentials.json
+kubeconfig
+*.kubeconfig
+.kube/
 .aws/
 .ssh/
+.hermes/
+.claude/
+.codex/
+sessions/
 .venv/
 venv/
 node_modules/

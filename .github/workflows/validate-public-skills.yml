@@ -1,0 +1,49 @@
+name: Validate public skills
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Validate skill metadata and local links
+        shell: python
+        run: |
+          from pathlib import Path
+          from urllib.parse import urlparse
+          import re
+
+          errors = []
+          for path in sorted(Path(".").glob("*/SKILL.md")):
+              text = path.read_text(encoding="utf-8")
+              if not text.startswith("---\n") or "\n---\n" not in text[4:]:
+                  errors.append(f"{path}: missing front matter")
+              for field in ("name:", "description:", "version:", "license:"):
+                  if not any(line.startswith(field) for line in text.splitlines()):
+                      errors.append(f"{path}: missing {field}")
+
+          for path in Path(".").rglob("*.md"):
+              text = path.read_text(encoding="utf-8")
+              for target in re.findall(r"\[[^\]]*\]\(([^)]+)\)", text):
+                  target = target.split("#", 1)[0]
+                  if not target or urlparse(target).scheme or target.startswith("mailto:"):
+                      continue
+                  if not (path.parent / target).resolve().exists():
+                      errors.append(f"{path}: missing link target {target}")
+
+          if errors:
+              print("\n".join(errors))
+              raise SystemExit(1)
+          print("Public skill metadata and local links are valid.")
+      - name: Check whitespace errors
+        run: git diff --check

@@ -14,7 +14,7 @@ Use placeholders such as `YOUR_ACCOUNT_ID`, `YOUR_REGION`, `YOUR_REPOSITORY`, an
 
 ## Reporting a suspected leak
 
-Do not open a public issue containing the suspected secret. Rotate or revoke the credential first, then contact the repository owner privately through GitHub security reporting or the account's established private contact channel.
+Do not open a public issue containing the suspected secret. Rotate or revoke the credential first. GitHub private vulnerability reporting is not currently enabled for this repository, and no response-time guarantee is published. If no private contact route is available, open a public issue titled `Private security report requested` with no sensitive details so the maintainer can provide a private channel; do not describe the vulnerability until that channel exists.
 
 ## Before publishing a change
 

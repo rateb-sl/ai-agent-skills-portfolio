@@ -97,7 +97,7 @@ The cloud, lab, study, documentation, and delivery workflows are tool-agnostic: 
 
 ## Public-safety statement
 
-This repository is a deliberately sanitized public edition. It contains no private Hermes profile, session history, memory, vault path, cloud account identifier, credential, personal contact data, or private automation configuration. Examples use placeholders such as `YOUR_ACCOUNT_ID` and `/path/to/project`.
+This repository is a deliberately sanitized public edition. In the audit of commit `421865f` and its reachable history, no private Hermes profile, session history, memory, vault path, cloud account identifier, credential, personal contact data, or private automation configuration was found. Examples use placeholders such as `YOUR_ACCOUNT_ID` and `/path/to/project`; re-run the scans before reusing or extending the export.
 
 The skills are educational workflows, not a guarantee of security or correctness for every environment. Review commands, costs, permissions, and provider documentation before running them.
 
