@@ -2,7 +2,7 @@
 
 ## What this skill does
 
-This skill turns job-board browsing into a bounded research process. It helps a candidate search several sources, remove duplicates, reject infeasible roles, compare realistic matches, and receive a shortlist supported by visible evidence.
+This skill turns job-board browsing and read-only MCP/API discovery into a bounded research process. It helps a candidate plan and check source connections, search relevant job boards and approved discovery providers, remove duplicates, reject infeasible roles, compare realistic matches, and receive a shortlist supported by authoritative listing evidence.
 
 ## Why it is valuable
 
@@ -16,10 +16,12 @@ It helps candidates:
 - record exactly why a role was retained or rejected;
 - preserve control over documents, applications, and outreach;
 - use AI assistance without handing over credentials or private application data.
+- distinguish source-native coverage from MCP/API and aggregator discovery;
+- verify provider permissions, data handling, provenance, and direct listings before retaining leads.
 
 ## Compatibility
 
-The method is tool-agnostic and can be used manually, with Hermes, Claude, GPT-based agents, Gemini, browser assistants, or a simple spreadsheet. It works with public job boards and company career pages, subject to each site's access rules.
+The method is tool-agnostic and can be used manually, with Hermes, Claude, GPT-based agents, Gemini, browser assistants, or a simple spreadsheet. MCP/API use is optional and depends on an available, authorized connector and the provider's current terms; the skill does not create connections or grant access. Search public job boards and company career pages only through permitted routes.
 
 ## Typical result
 
