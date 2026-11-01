@@ -65,7 +65,7 @@ This skill treats security and verification as part of agent design. It covers r
 
 ### Bounded Job Search and Candidate Triage
 
-This skill turns multi-board job searching into a finite research workflow. It deduplicates listings, applies explicit feasibility gates, separates strong matches from stretch roles, and records the evidence behind each recommendation. The benefit is a shortlist that is more honest and actionable, while keeping applications, credentials, documents, and outreach under the candidate's control.
+This skill turns multi-source job searching into a finite research workflow. It plans job-board and optional read-only MCP/API routes, distinguishes source-native coverage from aggregator discovery, deduplicates listings, applies explicit feasibility gates, and records evidence behind each recommendation. The benefit is a more honest shortlist while keeping connections, credentials, documents, applications, and outreach under the candidate's control.
 
 ## Tool compatibility
 
