@@ -1,7 +1,7 @@
 ---
 name: technical-documentation-and-visuals
 description: Use when explaining systems clearly with text or diagrams.
-version: 1.1.0
+version: 1.2.0
 license: MIT
 ---
 
@@ -31,6 +31,8 @@ A useful architecture diagram should show:
 - direction of important data or control flows;
 - protocols or interfaces when relevant;
 - failure, monitoring, and cleanup paths when they affect the design.
+- a representation that matches the relationship: sequence, ownership, state transition, data flow, or trust boundary. Do not force a linear chain when the system branches or acts through an intermediary.
+- arrows and symbols with verified, consistent meanings; do not imply direction or causality when only association is known.
 
 Do not decorate a diagram at the expense of meaning. Every visual element should explain a relationship, boundary, or decision.
 
@@ -46,7 +48,7 @@ Do not decorate a diagram at the expense of meaning. Every visual element should
 ## Privacy and evidence gate
 
 - Inspect screenshots, diagrams, alt text, filenames, document metadata, URLs, and embedded links for personal data, credentials, account identifiers, private hostnames, and internal paths.
-- Treat generated diagrams and copied configuration as unverified until they match the source design or observed state.
+- Treat generated diagrams and copied configuration as unverified until they match the source design or observed state. Inspect the final rendered visual at its intended size; a clean source file or overflow-free export does not prove the diagram teaches the right mechanism.
 - Do not publish a diagram merely because it looks complete: mark unknown, simulated, and learner-reported paths explicitly.
 
 ## Completion test
