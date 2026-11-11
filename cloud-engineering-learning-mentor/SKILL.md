@@ -1,7 +1,7 @@
 ---
 name: cloud-engineering-learning-mentor
 description: Use when guiding practical cloud-engineering learning.
-version: 1.1.0
+version: 1.2.0
 license: MIT
 ---
 
@@ -59,4 +59,4 @@ For every topic, classify details as:
 
 ## Completion test
 
-A learning task is complete only when the learner can explain the core model, demonstrate a verified proof, state the evidence boundary, and identify the next appropriate action.
+A learning task is complete only when the learner can explain the core model, demonstrate a verified proof appropriate to the task, state what the evidence proves and leaves unknown, and identify the next appropriate action. Keep conceptual understanding, project readiness, execution, and formal acceptance as separate states: a lesson, architecture, plan, or saved artifact alone does not prove that a build or submission is complete.
