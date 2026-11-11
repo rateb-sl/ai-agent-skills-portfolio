@@ -1,7 +1,7 @@
 ---
 name: bounded-job-search-and-candidate-triage
 description: Use when researching and triaging job opportunities safely.
-version: 1.3.0
+version: 1.4.0
 license: MIT
 ---
 
@@ -45,18 +45,21 @@ Do not request passwords, cookies, private tracker files, application portals, o
 Set a finite budget before searching. A safe default is:
 
 - up to 8 distinct queries across enabled sources;
-- up to 30 unique listings inspected;
+- screen up to 30 unique search-result cards;
+- open up to 10 unique listing-detail pages;
 - no repeated query that produces no new evidence;
-- prioritize listings posted within the last 14 days;
+- choose and record a freshness window before searching, then apply it consistently to candidate decisions;
 - stop when the budget is reached or the source stops producing trustworthy evidence.
 
-Record the budget, sources attempted, sources successfully searched, and unique listings inspected. Query count is not source coverage: report blocked, inaccessible, empty, or partially searched sources separately. Never infer a total market count from a capped search or silently combine discovery results from different tools as if they were one verified feed.
+Record the budget, sources attempted, sources successfully searched, unique result cards screened, and unique listing details read. Query count is not source coverage: report blocked, inaccessible, empty, or partially searched sources separately. Never infer a total market count from a capped search or silently combine discovery results from different tools as if they were one verified feed.
 
 If a source requires login, 2FA, or a CAPTCHA, ask the user to complete it manually. Never guess credentials or bypass the restriction.
 
+A targeted shortlist and an exhaustive coverage audit are different modes. Default to a bounded shortlist unless the user explicitly requests source-by-source coverage. A capped sample cannot establish market-wide absence; an individually verified candidate may still be useful when overall source coverage is partial, provided that limitation is reported.
+
 ## Source and connection plan
 
-Choose sources for the requested geography and role family; do not assume every agent has the same connectors or API access. A practical Germany-focused mix may include:
+Choose sources for the requested geography and role family; do not assume every agent has the same connectors or API access. Freeze the permitted sources, query scope, and retry budget before submitting searches. If a route is blocked, report it rather than silently switching sources, browsers, accounts, or access methods. A practical Germany-focused mix may include:
 
 | Search tier / route | Examples | What it can establish |
 |---|---|---|
@@ -73,12 +76,12 @@ Keep a source register for each run: provider/route, access class, connection st
 
 ## Workflow
 
-1. **Define the search lane.** Set role families, geography, work model, freshness window, and hard exclusions.
+1. **Define the search lane.** Choose shortlist or coverage-audit mode; set role families, geography, work model, freshness window, hard exclusions, sources, query budget, and per-run unique-detail-read budget. Freeze this scope before the first query; a new skill version or turn does not reset consumed attempts.
 2. **Select and authorize sources.** Record the source routes and connection state; inspect provider terms, data handling, and tool permissions before using MCP/API discovery. Freeze a small query matrix before submitting any search.
 3. **Collect source-specific evidence.** For board searches, record the exact query, location/filter echo, final URL, and visible sample. For an API/MCP without a results-page URL, record the exact request, provider query echo, timestamp, count, sample, stable IDs, and direct links. Preserve source provenance and label API/aggregator results as discovery until independently verified.
 4. **Check prior submissions.** Exclude only roles the candidate explicitly identifies as submitted. Treat drafts or saved documents as unsubmitted unless the candidate confirms otherwise.
 5. **Deduplicate.** Match by canonical URL first, then normalized company and role identity. Keep the best direct source and retain other sources as corroboration; do not count duplicate board copies as separate roles.
-6. **Verify live status.** Before recommending a role as active, open its direct listing or employer/ATS page where possible. Label the result as verified, needs live verification, or evidence incomplete. A search snippet, API result, aggregator preview, or cached page alone is not proof that a role is open.
+6. **Verify live status.** Before recommending a role as active, open its direct listing or employer/ATS page where possible and confirm that the rendered detail matches the selected listing’s stable identity. Record the exact posting-date wording and capture date. Label the result as verified, needs live verification, or evidence incomplete. A search snippet, API result, aggregator preview, or cached page alone is not proof that a role is open.
 7. **Apply hard gates.** Reject clearly infeasible geography, authorization, language, mobility, compensation, stale/closed status, or materially incompatible scope.
 8. **Assign a fit band.** Use `Strong`, `Good`, or `Potential/Stretch`. State concrete matching evidence and missing requirements; do not present a stretch role as ready to apply or imply false precision with unsupported percentages.
 9. **Return a shortlist.** Separate recommended, review, stretch, and rejected roles. Include the reason and next manual verification step for each retained role.
@@ -91,6 +94,7 @@ Each retained listing should contain:
 - queue: `Recommended`, `Review`, or `Potential/Stretch`;
 - exact title and company;
 - direct listing URL;
+- stable listing ID when the source exposes one;
 - location and work model;
 - posting age or an explicit unknown label;
 - source board and any corroborating sources;
@@ -98,6 +102,8 @@ Each retained listing should contain:
 - missing requirements or risks;
 - live-status label and date checked;
 - next verification step.
+
+Track source-coverage state separately from candidate disposition. “Inspected,” “retained,” and “source complete” are different claims; partial source coverage does not make a verified candidate invalid, and a valid candidate does not make a source complete.
 
 A search result snippet, aggregator preview, or stale cached page is not proof that a listing is active.
 
