@@ -1,7 +1,7 @@
 ---
 name: technical-study-note-production
 description: Use when turning technical work into durable notes.
-version: 1.1.0
+version: 1.2.0
 license: MIT
 ---
 
@@ -17,13 +17,13 @@ Separate original synthesis from source material. Do not republish course slides
 
 ## Workflow
 
-1. **Inventory sources.** Record titles, dates, URLs, files, and coverage boundaries.
+1. **Inventory sources.** Record titles, dates, URLs, files, and coverage boundaries. Name the sections or media actually inspected and identify material that was not available or reviewed; do not claim full-source coverage from an excerpt.
 2. **Extract the outcome.** Identify what was built, understood, tested, or decided.
 3. **Build the mental model.** Explain components, relationships, dependencies, and why the design works.
-4. **Preserve operational detail.** Include commands, configuration, expected evidence, failure modes, and cleanup when they are original and shareable.
-5. **Separate certainty levels.** Distinguish observed results, source-backed facts, learner interpretation, and open questions.
+4. **Preserve operational detail.** Include commands, configuration, expected evidence, failure modes, and cleanup when they are original and shareable. For an executed lab, keep the causal path in order and explain why each major action exists, what it changes, how to read it back, and what the evidence cannot prove.
+5. **Separate certainty levels.** Distinguish observed results, source-backed facts, learner interpretation, and open questions. Verify version-sensitive or operational claims against an appropriate primary source.
 6. **Add retrieval structure.** Use navigation, summary, detailed explanation, key terms, verification, and recall questions.
-7. **Audit the note.** Check factual claims, links, placeholders, privacy, attribution, and whether a reader can use it without the original chat.
+7. **Audit the note.** Check factual claims, citations, links, anchors, embeds, placeholders, privacy, attribution, and whether a reader can use it without the original chat.
 
 ## Recommended note shape
 
