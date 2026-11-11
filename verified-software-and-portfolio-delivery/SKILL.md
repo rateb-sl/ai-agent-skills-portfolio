@@ -1,7 +1,7 @@
 ---
 name: verified-software-and-portfolio-delivery
 description: Use when moving technical work from plan to proof.
-version: 1.1.0
+version: 1.2.0
 license: MIT
 ---
 
@@ -14,13 +14,13 @@ Move a technical idea from a bounded plan to a tested, documented, reviewable, a
 ## Workflow
 
 1. **Define the artifact.** State the problem, audience, acceptance criteria, non-goals, and risk boundary.
-2. **Inspect before changing.** Confirm repository, branch, existing conventions, and relevant dependencies.
+2. **Inspect before changing.** Confirm the remote repository, default branch, current commit and worktree state, existing conventions, and relevant dependencies; do not base an update on a stale checkout.
 3. **Implement narrowly.** Keep the change focused and preserve a clear diff.
-4. **Test proportionally.** Run syntax checks, unit tests, integration checks, security scans, and manual verification appropriate to the artifact.
+4. **Test proportionally.** Run syntax checks, unit tests, integration checks, security scans, and manual verification appropriate to the artifact. Exercise documented script entry points as well as discovered tests; zero collected tests or a successful no-op command is not a pass.
 5. **Document honestly.** Explain what works, how it was tested, limitations, costs, and cleanup.
 6. **Review for public safety.** Remove secrets, personal data, private URLs, copied material, generated noise, and environment-specific identifiers.
 7. **Publish deliberately.** Use the intended visibility, license, and attribution. Do not publish unfinished or unverified work.
-8. **Read back remotely.** Confirm the repository visibility, expected files, commit, README links, and CI status after publication.
+8. **Read back remotely.** Confirm the repository visibility, expected files, exact default-branch commit, README links, and CI/security status after publication. An open pull request is a proposal, not a completed release; after merging, verify the merged files and checks.
 
 ## Portfolio quality gate
 
@@ -38,8 +38,11 @@ A public artifact should:
 - Use a real `.gitignore` for secrets, state, keys, logs, and local files.
 - Enable secret scanning, push protection, Dependabot, and CI checks where available.
 - Scan the complete Git history before public release.
+- For an existing public skill portfolio, update the same skill paths and index entries; preserve the folder tree, visible ordering, and unrelated README content unless the user explicitly requests a structural change.
+- Pin third-party CI actions to reviewed full commit SHAs, use least-privilege workflow permissions and bounded job timeouts, and disable persisted checkout credentials when they are not needed.
 - Never bypass a security alert without understanding and documenting it.
 - Use short-lived, least-privilege credentials outside the repository.
+- Verify secret-scanning and push-protection settings where available; report unavailable or plan-gated controls honestly. Scanning reduces risk but does not prove that an export contains no private information.
 
 ## AI and external-state integrity
 
